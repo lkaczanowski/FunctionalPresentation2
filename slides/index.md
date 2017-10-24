@@ -8,6 +8,12 @@
 
 ***
 
+### Higher Order Functions
+
+
+
+***
+
 ### Compose
 
     let compose f g x = g (f x)
