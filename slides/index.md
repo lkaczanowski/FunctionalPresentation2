@@ -22,10 +22,38 @@
 
 ***
 
+### Elevated world
+
+***
+
 ### Functor
 
     [lang=haskell]
     fmap :: (a -> b) -> m a -> m b
+
+---
+
+### Functor
+#### List
+
+    [lang=haskell]
+    fmap :: (a -> b) ->  [a]  -> [b]
+
+---
+
+### Functor
+#### Option
+
+    [lang=haskell]
+    fmap :: (a -> b) -> Option a -> Option b
+
+---
+
+### Functor
+#### Task
+
+    [lang=haskell]
+    fmap :: (a -> b) -> Task a -> Task b
 
 ***
 
