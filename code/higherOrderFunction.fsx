@@ -1,5 +1,5 @@
 // Basic 1
-let map f a = f a
+let map f a = f a 
 
 let doWork data callback = 
   if String.length data > 5 then

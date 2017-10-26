@@ -10,8 +10,6 @@
 
 ### Higher Order Functions
 
-
-
 ***
 
 ### Compose
@@ -22,7 +20,10 @@
 
 ***
 
-### Elevated world
+### Życie w chmurze
+#### aka Elevated World
+
+![Elevated](images/elevatedworld.jpg)
 
 ***
 
@@ -54,6 +55,19 @@
 
     [lang=haskell]
     fmap :: (a -> b) -> Task a -> Task b
+
+***
+
+### Przestrzeganie reguł
+
+---
+
+### Prawo toższamości
+#### Identity law
+> Zapewnia, że functor nie będzie robił, żadnych dodatkowych zmian i efektów ubocznych. Zmiany robi tylko aplikowana funkcja.
+
+    [lang=haskell]
+    fmap id a = id a
 
 ***
 
