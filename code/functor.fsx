@@ -22,6 +22,11 @@ module ListFunctor =
 
 // Example 3
 module TaskFunctor = 
+  open System.Threading.Tasks
 
-  let fmap f (a : System.Threading.Tasks.Task) =
-    // todo
+  let fmap (f : 'a -> 'b) (a : System.Threading.Tasks.Task<'a>) =
+    if a.IsCompleted then
+      let result = a.Result
+      Task.FromResult(f result)
+    else
+      a.ContinueWith(continuationFunction = fun (next : Task<'a>) -> next.Result |> f)
