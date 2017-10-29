@@ -1,10 +1,6 @@
 // Example 1
 module EitherFunctor =
 
-  type 'a Either = 
-    | None
-    | Some of 'a
-
   let fmap f a = 
     match a with
     | None -> None
