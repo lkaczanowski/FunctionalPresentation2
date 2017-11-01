@@ -20,10 +20,15 @@
 
 ***
 
-### Życie w chmurze
-#### aka Elevated World
+### Elevated World
 
-![Elevated](images/elevatedworld.jpg)
+![Elevated](images/f001.jpg)
+
+--- 
+
+![Elevated2](images/f002.jpg)
+
+### 
 
 ***
 
@@ -56,6 +61,18 @@
     [lang=haskell]
     fmap :: (a -> b) -> Task a -> Task b
 
+---
+
+### Podejście 1
+
+![Look1](images/f003.jpg)
+
+---
+
+### Podejście 2
+
+![Look2](images/f004.jpg)
+
 ***
 
 ### Przestrzeganie reguł
@@ -68,6 +85,15 @@
 
     [lang=haskell]
     fmap id a = id a
+
+---
+
+### Prawo kompozycji
+#### Composition law
+> Zapewnia, że implementacja functora nie będzie łamała kompozycji funkcji
+
+    [lang=haskell]
+    fmap (g . f) = fmap g . fmap f
 
 ***
 
@@ -91,6 +117,15 @@
     [lang=haskell]
     arrow :: (a -> m b) -> (b -> m c) -> m a -> m c
 
+---
+
+### Giraffe
+
+    let app =
+        choose [
+            route "/ping" >=> text "pong"
+            route "/admin" >=> mustBeLoggedIn >=> text "You're an admin"
+        ]
 ***
 
 ### Podsumowanie
