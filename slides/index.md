@@ -4,6 +4,8 @@
 - theme : night
 - transition : default
 
+***
+
 ### Funkcyjna kompozycja
 
 ***
@@ -119,7 +121,7 @@
 
 ---
 
-### Giraffe
+### Suave / Giraffe
 
     let app =
         choose [
@@ -134,8 +136,37 @@
     fmap  ::   (a ->   b) -> m a -> m b
     apply :: m (a ->   b) -> m a -> m b
     bind  ::   (a -> m b) -> m a -> m b
+
+***
+
+### Ale koduję w C#
+#### Jak tu żyć?
+
+---
+
+![LanguageExt](images/f005.png)
+
+---
+
+### Funkcyjny C#
+
+![Fail](images/f006.jpg)
+
+---
+
+### Polecam F# ;)
+
+![Logo](images/f007.png)
+
+
 ***
 
 ### Linki
 
+Nauka F#
+<br/>
 [http://fsharpforfunandprofit.com/](http://fsharpforfunandprofit.com/)
+
+
+Teoria Kategorii dla Programistów
+[https://github.com/hmemcpy/milewski-ctfp-pdf](https://github.com/hmemcpy/milewski-ctfp-pdf)
